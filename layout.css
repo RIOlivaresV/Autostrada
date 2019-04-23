@@ -1,0 +1,35 @@
+/*fonts*/
+	@font-face {
+    font-family: AdobeNaskh;
+    src: url(DESIGN/FONTS/AdobeNaskh-Medium.otf);
+
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(DESIGN/FONTS/Avenir.ttc);
+}
+
+#facebook>img, #twitter>img, #instagram>img{
+			width: 100%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);
+			padding: 0vw;
+			margin: 0vw;
+		}
+		#facebook, #twitter, #instagram{
+			padding: 0vw;
+			padding-right: 1vw;
+			margin: 0vw;
+		}
+		#socialMedia>table{
+			width: 70%;
+		}
+		#socialMedia{
+			color: #FFFFFF;
+			text-align: -webkit-center;
+			position: fixed;
+		    top: 94%;
+		    right: 0%;
+		}

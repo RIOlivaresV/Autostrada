@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<style type="text/css">
+	
+		#menu{
+			position: fixed; 	
+			z-index: 1;
+			width: 100%;
+			font-family: 'AdobeNaskh';
+		}
+		body{
+			background-color: black;
+		}
+		#logo{
+			position: fixed;
+			width: 60%;
+			z-index: 1;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
+			transform :translate(-41%,-42%) scale(0.12);
+		}
+		nav{
+			padding-right: 5vw;
+			padding-left: 4%;
+		}
+		nav#horizontalNavigation > ul > li {
+		   display: block;
+		   float: left;
+		   font-size: 1.4em;
+		   line-height: 1.8em;
+		   text-align: center;
+		   padding: 1vw;
+		}
+		nav#horizontalNavigation a:link, 
+		nav#horizontalNavigation a:visited {
+		   text-decoration: none;
+		   color: white;
+		}
+
+		nav#horizontalNavigation a:hover, 
+		nav#horizontalNavigation a:active {
+		   
+		} 	
+		#main{
+			width: 100%;
+			height: 97vh;
+			white-space: nowrap;	
+			scroll-behavior: smooth;
+			overflow-y: hidden;
+		}
+		aside{
+			width: 45%;
+		}
+		figure{
+			margin:0;
+		}
+		#chef{
+			width: 76%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);
+			padding-top: 22%;
+			padding-bottom: 10%;	
+		}
+		#plates{
+			width: 100%;
+			overflow-y: scroll;
+			max-height: 35vw;
+			margin-top: 15%;
+		}
+		.service{
+			background-color: rgba(152, 190, 151, 1);
+			border: 1px solid;
+			border-color: rgba(112, 112, 112, 1);
+			font-family: Avenir;
+			color:rgba(255, 255, 255, 1);
+			width: 40%;
+			text-align: left;
+    		padding-left: 5%;
+		}
+		.dish, .price{
+			font-family: Avenir;
+			color:rgba(255, 255, 255, 1);
+			font-size: 1.1vw;
+		}
+		.ingredients{
+			font-size: .9vw;
+		}
+		#conteiner{
+			float: right;
+		}
+		#middle{
+			width: 40%;
+			border-bottom: 2vw solid;
+			border-bottom-color: black;
+		}
+		.price{
+			width: 20%;
+		}
+		.dish{
+			text-align: left;
+			border-bottom: 1vw solid;
+			border-bottom-color: black;
+			padding-left: 8%;
+		}
+		th.dish p{
+			margin: 0;
+		}
+		div#plates table{
+			width: 100%;
+		}
+		#title{
+			font-size: 14vw;
+			color: rgba(255, 255, 255, 1);
+			font-family: 'AdobeNaskh';
+			position: absolute;
+			z-index: 1;
+			top: 25%;
+			left:25%;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="menu">
+		<nav id="horizontalNavigation">
+          <ul>
+             <li><a href="menu.html">MENU</a></li>
+             <li><a href="#">OUR COMMUNITY</a></li>
+             <li><a href="#">CONTACT</a></li>
+          </ul>
+       </nav>
+       </div>
+       <div id="title">
+       	Menu
+       </div>
+       <a href="index.html"><img src="DESIGN/IMAGES/EDIT/Large-Icon.png" id="logo"></a>	
+       <div>
+		<aside id="conteiner">
+			<div id="plates">
+				<table>
+					<tr>
+						<th class="service"><b>ANTIPASTI</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Olive miste</p>
+							<p class="ingredients">Mixes olives</p>
+						</th>
+						<th class="price"><b>$6</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Focaccia</p>
+							<p class="ingredients">Baked in house daily</p>
+						</th>
+						<th class="price"><b>$6</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Duck liver on toast</p>
+							<p class="ingredients">Aged balsamic, cornichon</p>
+						</th>
+						<th class="price"><b>$9</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Anchovy on toast</p>
+							<p class="ingredients">Herb butter, pickled cucumber, radish, white anchovy</p>
+						</th>
+						<th class="price"><b>$8</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Insalata di stagione</p>
+							<p class="ingredients">"Best of the season" salad</p>
+						</th>
+						<th class="price"><b>$13</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Caesar</p>
+							<p class="ingredients">Anchovy dressing, caper, lemon, parmigiano</p>
+						</th>
+						<th class="price"><b>$13</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Tuna carpaccio</p>
+							<p class="ingredients">Preserved lemon, chili aioli gigantes beans</p>
+						</th>
+						<th class="price"><b>$14</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Polpette al sugo</p>
+							<p class="ingredients">Meatvalls, tomato sauce</p>
+						</th>
+						<th class="price"><b>$13</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Vitello tonnato</p>
+							<p class="ingredients">Shaved veal, tuna sauce, capers</p>
+						</th>
+						<th class="price"><b>$16</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Piatto misto salumi</p>
+							<p class="ingredients">30 moth prosciutto, napoli dolce, soppressata</p>
+						</th>
+						<th class="price"><b>$19</b></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th class="service"><b>PASTAS</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Rigatoni alla norma</p>
+							<p class="ingredients">Eggplant, tomato, chilli</p>
+						</th>
+						<th class="price"><b>$18</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Garganelli con salsiccia</p>
+							<p class="ingredients">Fennel sausage, peas, pecorino</p>
+						</th>
+						<th class="price"><b>$22</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Linguini al tonno</p>
+							<p class="ingredients">Confit tuna, castelvetrano olives, capers</p>
+						</th>
+						<th class="price"><b>$22</b></th>
+					</tr><tr>
+						<th colspan="2" class="dish">
+							<p>Sagne a pezzi</p>
+							<p class="ingredients">Duck & anchoy ragu</p>
+						</th>
+						<th class="price"><b>$21</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Spaghetti bolognese</p>
+							<p class="ingredients">Classic bolognese</p>
+						</th>
+						<th class="price"><b>$19</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Bucatini cacio a pepe</p>
+							<p class="ingredients">Black pepper, pecorino</p>
+						</th>
+						<th class="price"><b>$18</b></th>
+					</tr><tr>
+						<th colspan="2" class="dish">
+							<p>Eisotto della casa</p>
+						</th>
+						<th class="price"><b>$21</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Contorni</p>
+							<p class="ingredients">Daily side vegetable</p>
+						</th>
+						<th class="price"><b>$7</b></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th class="service"><b>NEGRONIS</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Classic</p>
+							<p class="ingredients">Dry Gin, Campari, Sweet Vemouth</p>
+						</th>
+						<th class="price"><b>$10</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Sparkling</p>
+							<p class="ingredients">Classic with Prosecco</p>
+						</th>
+						<th class="price"><b>$12</b></th>
+					</tr><tr>
+						<th colspan="2" class="dish">
+							<p>Bianco</p>
+							<p class="ingredients">Brokers Gin, Martini Dry, Luxardo Bitter Bianco</p>
+						</th>
+						<th class="price"><b>$12</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Local</p>
+							<p class="ingredients">Tempo Dry Gin, Bitter House Daman, Odd Society Vermouth</p>
+						</th>
+						<th class="price"><b>$12</b></th>
+					</tr><tr>
+						<th colspan="2" class="dish">
+							<p>Boulevardier</p>
+							<p class="ingredients">Buffalo Trace Bourbon, Campari, Cinzano Rosso</p>
+						</th>
+						<th class="price"><b>$12</b></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th class="service"><b>STANDARS</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Amalfi G&T</p>
+						</th>
+						<th class="price"><b>$12</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Bellini</p>
+						</th>
+						<th class="price"><b>$12</b></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th class="service"><b>WHITE WINE</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Prosecco</p>
+						</th>
+						<th class="price"><b>$10/$50</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Clean House White</p>
+						</th>
+						<th class="price"><b>$9/$45</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Fresh, Juicy Rose</p>
+						</th>
+						<th class="price"><b>$11/$55</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Crisp, Zesty</p>
+						</th>
+						<th class="price"><b>$12/$60</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Graceful Chardonnay</p>
+						</th>
+						<th class="price"><b>$12/$60</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Trentino Pinot Grigio</p>
+						</th>
+						<th class="price"><b>$12/$60</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Trentino Pinot Grigio</p>
+						</th>
+						<th class="price"><b>$75</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Champagne</p>
+						</th>
+						<th class="price"><b>$140</b></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th class="service"><b>RED WINE</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Very Drinkable House Red</p>
+						</th>
+						<th class="price"><b>$9/$45</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Spacy, Juicy Southern Style</p>
+						</th>
+						<th class="price"><b>$11/$55</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Rich, Sultry Venetion</p>
+						</th>
+						<th class="price"><b>$11/$55</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Classic Tuscan</p>
+						</th>
+						<th class="price"><b>$12/$60</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Elegant, Bright Piedmontese</p>
+						</th>
+						<th class="price"><b>$14/$70</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Almost "Super Tuscan" IGT</p>
+						</th>
+						<th class="price"><b>$15/$75</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Amorone</p>
+						</th>
+						<th class="price"><b>$95</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Barolo</p>
+						</th>
+						<th class="price"><b>$130</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Brunello</p>
+						</th>
+						<th class="price"><b>$140</b></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th class="service"><b>BEER</b></th>
+						<th id="middle"></th>
+						<th class="price"></th>
+					</tr>
+					<tr><th ><br><br></th><th ></th><th ></th></tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Peroni Lager</p>
+						</th>
+						<th class="price"><b>$7</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Four Winds Pale Ale</p>
+						</th>
+						<th class="price"><b>$6</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Parkside Pilsner</p>
+						</th>
+						<th class="price"><b>$6</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Parkside Dream Boat IPA</p>
+						</th>
+						<th class="price"><b>$7</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Stronge Fellows Brewing<br>
+							Popinjay Westcoast Sour</p>
+						</th>
+						<th class="price"><b>$8</b></th>
+					</tr>
+					<tr>
+						<th colspan="2" class="dish">
+							<p>Windfall Cider</p>
+						</th>
+						<th class="price"><b>$9</b></th>
+					</tr>
+				</table>
+			</div>
+		</aside>
+		<aside>
+			<figure><img src="DESIGN/IMAGES/EDIT/menu.jpg" id="chef"></figure>
+		</aside>
+	</div>
+	<div id="socialMedia">
+				<table>
+					<tr>
+				<td><a href="https://www.facebook.com/autostradayvr/"><figure id="facebook" ><img id="facebookImg" onmouseover="facebookOver()" onmouseout="facebookOut()" src="DESIGN/TOOLKIT/Facebook_Active@2x.png"></figure></a></td>
+				<td><a href=""><figure id="twitter" ><img id="twitterImg" onmouseover="twitterOver()" onmouseout="twitterOut()"  src="DESIGN/TOOLKIT/Twitter_Active@2x.png"></figure></a></td>
+				<td><a href="https://www.instagram.com/autostradamain/?hl=en"><figure id="instagram" ><img id="instagramImg" onmouseover="instagramOver()" onmouseout="instagramOut()"  src="DESIGN/TOOLKIT/Instagram_Active@2x.png"></figure></a></td>
+				<td><span>Autostrada Osteria &copy; <span id="year"></span></span></td>
+				</tr>
+					</table>
+			</div>
+	</div>
+</body>
+</html>

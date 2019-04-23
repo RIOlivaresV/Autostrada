@@ -1,0 +1,295 @@
+
+/*-------------------------------------------------------------*/
+		/*Conteiners*/
+		.conteiner{
+			width: 100%;
+			display: inline-block;
+		}
+		.generalConteiner{
+			width: 100%;
+			position: absolute;
+		}
+		.conteinerLeft{
+			height: 80%;
+			color: white;
+		}
+		.conteinerRight{
+			height: 80%;
+			color: white;
+		}
+		#main{
+			width: 100%;
+			height: 97vh;
+			white-space: nowrap;	
+			scroll-behavior: smooth;/*
+			background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;*/
+		}
+		#main::-webkit-scrollbar{
+			display: none;
+		}
+/*-------------------------------------------------------------*/
+
+		h1{
+			color: white;
+		}
+		body{
+			background-color: black;
+			overflow-y: hidden;
+		}
+		/*table{
+			margin: auto;
+			margin-top: 10%
+		}*/
+
+/*----------------------------------------------------------------------*/
+		/*Images*/
+		.pictureHome{
+			text-align: 
+		}
+		#pictureHome>figure>img{
+				width: 100%;
+				transform: scale(1, 1);
+				-ms-transform: scale(1, 1);
+				-webkit-transform: scale(1, 1);	
+		}
+
+/*----------------------------------------------------------------------*/
+		/*menu*/
+		#menu{
+			position: fixed; 	
+			z-index: 1;
+			width: 100%;
+			font-family: 'AdobeNaskh';
+		}
+		
+/*----------------------------------------------------------------------*/
+		/*Home*/
+		#spanTitulo{
+			font-size: 10vw;
+			font-family: Elsie Swash Caps, cursive;
+			padding-right:  10vw;	
+		}
+		#spanShort{
+			font-size: 3vw;
+			font-family: 'AdobeNaskh';
+			padding-left: 15%;
+			padding-right: 15%;
+			padding-top: 2%;
+			padding-bottom: 2%;
+		}
+		.conteinerLeft>div{
+			background-color: #98BE97;
+			width: 80%;
+			text-align: center;
+		}
+		nav{
+			float: right;
+			padding-right: 5vw;
+		}
+		nav#horizontalNavigation > ul > li {
+		   display: block;
+		   float: left;
+		   font-size: 1.4em;
+		   line-height: 1.8em;
+		   text-align: center;
+		   padding: 1vw;
+		}
+		nav#horizontalNavigation a:link, 
+		nav#horizontalNavigation a:visited {
+		   text-decoration: none;
+		   color: white;
+		}
+
+		nav#horizontalNavigation a:hover, 
+		nav#horizontalNavigation a:active {
+		   
+		} 
+		 
+	/*	table{
+			display: inline-block;
+			float: left;
+			width: 50%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
+		}*/
+
+		/*logo*/
+		#logo{
+			position: fixed;
+			width: 60%;
+			z-index: 1;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
+			bottom: 25%;
+		    right: 40%;
+		}
+
+/*----------------------------------------------------------------------*/
+		/*about uds*/
+		#aboutUs{
+			width: 45%;
+		    height: 36vw;
+		    background-color: #9B4856;
+		    position: absolute;
+		    margin-left: 8%;
+		    margin-top: 5%;
+		    text-align: justify;
+		    transform: translate(0%,105%);
+		}
+		#plate{
+			width: 40%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
+			position: absolute;
+			top:-15%;
+			left:175%;
+		}
+		#plate2{
+			width: 30%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
+			position: absolute;
+			top:50%;
+			left:280%;
+			z-index: 1;
+		}
+		#team{
+			width: 35%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
+			transform: translate(0%,-150%);
+			position: absolute;
+			top: 30%;
+    		left: 150%;
+		}
+		#titleAboutUs{
+			font-size: 5vw;
+			font-family: 'AdobeNaskh';
+			padding-left: 10%;
+		}
+		#textAboutUs{
+			font-size: 1.3vw;
+			font-family: 'Avenir';
+			padding-left: 10%;
+			color: #FFFFFF;
+			white-space: normal;
+			width: 65%
+		}
+		#reviews{
+			width: 95%;
+			color: #FFFFFF;
+			font-size: 1.5vw;
+			font-family: 'Avenir';
+		}
+		#reviewsDown{
+			position: absolute;
+			width: 100%;
+			top:70%;
+			left: 205%;
+		}
+		#reviewsMeddle{
+			position: absolute;
+			width: 100%;
+			top: 40%;
+    		left: 238%;
+		}
+		#reviewsUp{
+			position: absolute;
+			top: 10%;
+			left: 265%;
+			float: right;
+			width: 100%
+		}
+		#reviewsDown,#reviewsMeddle,#reviewsUp{
+			width: 30%;
+			white-space: normal;
+			margin-bottom: 3vw;
+			margin-top: 1vw;
+			text-align: left;
+		}
+		
+
+/*----------------------------------------------------------------------*/
+
+/*Location*/
+
+#locations{
+	width: 38%;
+	margin: auto;
+	padding-top: 7%;
+	margin-bottom: 7%;
+}
+table#locations th{
+	background-color: #F2F2ED;
+	border-bottom: 2vw solid black;
+}
+.title{
+	font-family: 'AdobeNaskh';
+	font-size: 4vw;
+	color: #98BE97;
+	margin: 0;
+	padding: 5% 0% 0% 7%;
+	text-align: left;
+}
+.address, .openHours{
+	margin: 0;
+	text-align: left;
+	font-family: 'Avenir';
+	font-size: 1.2vw;
+	padding: 0% 0% 5% 7%;
+}
+.rectangle {
+	  height: 3.5vw;
+	  width: 7vw;
+	  background-color: rgba(155, 72, 86, 1);
+	  position: absolute;		
+	  left: 65%;
+	  font-family: 'Avenir';
+	  font-size: 1vw;
+	  color: rgba(255, 255, 255, 1);
+	  cursor: pointer;
+}
+/*----------------------------------------------------------------------*/
+/*maps*/
+#maps{
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	opacity: 0.5;
+}
+#MapConteiner{
+		position: fixed;
+		height: 100%;
+		margin: auto;
+		width: 100%;
+		z-index: -1;
+		top: 1%;
+}
+#map{
+    		height: 380px;
+    		margin: auto;
+    		width: 50%;
+    		margin-top: 10%;
+    	margin-left: 25%;
+    	margin-bottom: 16%;
+    	margin-right: 25%;
+    		overflow: hidden;
+    	}
+#map1{
+	bottom: 73%;
+}
+#map2{
+	top: 50%;
+}
+#map3{
+	bottom: 18%;
+}

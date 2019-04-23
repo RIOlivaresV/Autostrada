@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autostrada Osteria</title>
+	<!-- <link href="DESIGN/FONTS/AdobeNaskh-Medium.otf" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOIqSzwKiSQKG_cA9ltred8izFI_k8_x0" async defer></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body  onload="year()">
+	<div id="main">
+		<div>
+		<div id="menu">
+		<nav id="horizontalNavigation">
+          <ul>
+             <li><a href="menu.html">MENU</a></li>
+             <li><a href="#">OUR COMMUNITY</a></li>
+             <li><a href="#">CONTACT</a></li>
+          </ul>
+       </nav>
+       </div>
+		<div class="conteiner">
+			<a href="index.html"><img src="DESIGN/IMAGES/EDIT/Large-Icon.png" id="logo"></a>
+			<table class="generalConteiner">
+				<tr>
+					<td class="conteinerRight" id="pictureHome">
+						<figure><img src="DESIGN/IMAGES/EDIT/Fondo_001_A.png"></figure>
+					</td>
+					<td class="conteinerLeft">
+						<span id="spanTitulo">Pasta <br> & Wine</span>
+						<div>
+							<span id="spanShort">
+								CLOSE TO HOME
+							</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div id="socialMedia">
+				<table>
+					<tr>
+				<td><a href="https://www.facebook.com/autostradayvr/"><figure id="facebook" ><img id="facebookImg" onmouseover="facebookOver()" onmouseout="facebookOut()" src="DESIGN/TOOLKIT/Facebook_Active@2x.png"></figure></a></td>
+				<td><a href=""><figure id="twitter" ><img id="twitterImg" onmouseover="twitterOver()" onmouseout="twitterOut()"  src="DESIGN/TOOLKIT/Twitter_Active@2x.png"></figure></a></td>
+				<td><a href="https://www.instagram.com/autostradamain/?hl=en"><figure id="instagram" ><img id="instagramImg" onmouseover="instagramOver()" onmouseout="instagramOut()"  src="DESIGN/TOOLKIT/Instagram_Active@2x.png"></figure></a></td>
+				<td><span>Autostrada Osteria &copy; <span id="year"></span></span></td>
+				</tr>
+					</table>
+			</div>
+		</div>
+		<div class="conteiner">
+					<div id="aboutUs">
+						<h1 id="titleAboutUs">About us...</h1>
+						<p id="textAboutUs">
+							What&#39;s in a name? An autostrada is an expressway or toll road in Italy. 
+							<br><br>
+							The concept is a simple one. Autostrada is all about pasta, which is something that Chef Lucais Syme (formerly of La Quercia, founder of La Pentola and co-owner of Cinara) does exceptionally well. The menu features several pastas and a range of tasty traditional set-ups like salumi, terrines and vitello tonnato and risotto.
+
+						</p	>
+					</div>
+
+			<img src="DESIGN/IMAGES/EDIT/Platillo_001.png" id="plate">
+			<img src="DESIGN/IMAGES/EDIT/Equipo_001.jpg" id="team">
+		</div>
+		<div class="conteiner">
+			<div id="reviews">
+				<div id="reviewsUp">
+							&quot;A true ode to Riley Park with its casual yet intentional style developed by Lucais Syme and Dustin Dockendorf&quot; 
+							<b><br><br>&#45; By Jenni Baynham (Vancouver Magazine)</b>
+				</div>
+				<div id="reviewsMeddle">
+							&quot;Whatever the combination of factors, Autostrada has nailed a winning neighbourhood-restaurant formula that&#39;s as tight as its tomato sauce&quot;
+							<b><br><br>&#45; Alexandra Gill (The Globe and Mail)</b>
+				</div>	
+				<div id="reviewsDown">
+							&quot;The bright, unpretentious room is made all the more attractive by a simple menu of familiar favourites and unfussy wine list.&quot;
+							<b><br><br>&#45; Andrew Morrison (Scout Magazine)</b>
+				</div>
+				<img src="DESIGN/IMAGES/EDIT/Platillo_002.png" id="plate2">
+			</div>
+		</div>
+		<div class="conteiner">
+			<div class="generalConteiner">
+				<img src="DESIGN/IMAGES/EDIT/VancouverDowntownWeb-[Convertido].png" id="maps">
+			<div>
+				<table id="locations">
+					<tr>
+						<th>
+							<p class="title">Main</p>
+							<p class="address">4811 Main St., Vancouver, BC V5V 3R9</p>
+							<p class="openHours">
+								<br><b>OPENION HOURS</b><br>
+								<span>Monday - Sunday</span><br>
+								<span>5PM - 10 PM</span>
+							</p>
+							<div class="rectangle" id="map1" onclick="OpenMap('Main')">
+								<p>OPEN MAP</p>
+							</div>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<p class="title">Downtown</p>
+							<p class="address">350 W Pender St, Vancouver, BC V6B 1T1</p>
+							<p class="openHours">
+								<br><b>OPENION HOURS</b><br>
+								<span>Monday - Sunday</span><br>
+								<span>5PM - 10 PM</span>
+							</p>
+							<div class="rectangle" id="map2" onclick="OpenMap('Downtown')">
+								<p>OPEN MAP</p>
+							</div>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<p class="title">Granville Island</p>
+							<p class="address">1583 Johnston St, Vancouver, BC V6H 3R9</p>
+							<p class="openHours">
+								<br><span><b>OPENION HOURS</b></span><br>
+								<span>Monday - Sunday</span><br>
+								<span>5PM - 10 PM</span>
+							</p>
+							<div class="rectangle" id="map3" onclick="OpenMap('Granville')">
+								<p>OPEN MAP</p>
+							</div>
+						</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+	<div id="MapConteiner" onclick="hideMap()"><div id="map">
+				</div></div>
+</body>
+</html>

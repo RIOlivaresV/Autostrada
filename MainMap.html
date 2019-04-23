@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autostrada Main Map</title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOIqSzwKiSQKG_cA9ltred8izFI_k8_x0" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+    	#map{
+    		height: 380px;
+    		margin: : auto;
+    	}
+    </style>
+    <script type="text/javascript">
+
+    	var map;
+    	var center= { lat: 49.241718, lng:-123.101852};
+    	function initMap(){
+    		map = new google.maps.Map(document.getElementById('map'),{zoom: 15, center: center});
+            var marker = new google.maps.Marker({position: center, map: map});
+    	}
+
+    </script>
+</head>
+<body>
+	<div id="map">
+	</div>
+	</div>
+</body>
+</html>
