@@ -4,9 +4,13 @@
 	<title>Autostrada Osteria</title>
 	<!-- <link href="DESIGN/FONTS/AdobeNaskh-Medium.otf" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOIqSzwKiSQKG_cA9ltred8izFI_k8_x0" async defer></script>
 	<script src="js/jquery.mousewheel.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="Styles.css">
 	<link rel="stylesheet" type="text/css" href="layout.css">
 	<script type="text/javascript" src="scripts.js"></script>
@@ -31,12 +35,12 @@
 						<figure><img src="DESIGN/IMAGES/EDIT/Fondo_001_A.png"></figure>
 					</td>
 					<td class="conteinerLeft">
-						<span id="spanTitulo">Pasta <br> & Wine</span>
-						<div>
-							<span id="spanShort">
-								CLOSE TO HOME
-							</span>
+						<div id="spanTitulo"><p>Pasta</p> & Wine
+							<div id="spanShort">
+									<span class="dot">•</span>   CLOSE TO HOME   <span class="dot">•</span>
+							</div>
 						</div>
+						
 					</td>
 				</tr>
 			</table>
@@ -69,15 +73,15 @@
 			<div id="reviews">
 				<div id="reviewsUp">
 							&quot;A true ode to Riley Park with its casual yet intentional style developed by Lucais Syme and Dustin Dockendorf&quot; 
-							<b><br><br>&#45; By Jenni Baynham (Vancouver Magazine)</b>
+							<b><br>&#45; By Jenni Baynham (Vancouver Magazine)</b>
 				</div>
 				<div id="reviewsMeddle">
 							&quot;Whatever the combination of factors, Autostrada has nailed a winning neighbourhood-restaurant formula that&#39;s as tight as its tomato sauce&quot;
-							<b><br><br>&#45; Alexandra Gill (The Globe and Mail)</b>
+							<b><br>&#45; Alexandra Gill (The Globe and Mail)</b>
 				</div>	
 				<div id="reviewsDown">
 							&quot;The bright, unpretentious room is made all the more attractive by a simple menu of familiar favourites and unfussy wine list.&quot;
-							<b><br><br>&#45; Andrew Morrison (Scout Magazine)</b>
+							<b><br>&#45; Andrew Morrison (Scout Magazine)</b>
 				</div>
 				<img src="DESIGN/IMAGES/EDIT/Platillo_002.png" id="plate2">
 			</div>
@@ -85,7 +89,7 @@
 		<div class="conteiner">
 			<div class="generalConteiner">
 				<img src="DESIGN/IMAGES/EDIT/VancouverDowntownWeb-[Convertido].png" id="maps">
-			<div>
+			<div id="tableLocations">
 				<table id="locations">
 					<tr>
 						<th>
@@ -97,7 +101,7 @@
 								<span>5PM - 10 PM</span>
 							</p>
 							<div class="rectangle" id="map1" onclick="OpenMap('Main')">
-								<p>OPEN MAP</p>
+								OPEN MAP
 							</div>
 						</th>
 					</tr>
@@ -111,11 +115,11 @@
 								<span>5PM - 10 PM</span>
 							</p>
 							<div class="rectangle" id="map2" onclick="OpenMap('Downtown')">
-								<p>OPEN MAP</p>
+								OPEN MAP
 							</div>
 						</th>
 					</tr>
-					<tr>
+					<!-- <tr>
 						<th>
 							<p class="title">Granville Island</p>
 							<p class="address">1583 Johnston St, Vancouver, BC V6H 3R9</p>
@@ -128,7 +132,7 @@
 								<p>OPEN MAP</p>
 							</div>
 						</th>
-					</tr>
+					</tr> -->
 				</table>
 			</div>
 		</div>

@@ -38,6 +38,7 @@
 		body{
 			background-color: black;
 			overflow-y: hidden;
+			line-height: unset;
 		}
 		/*table{
 			margin: auto;
@@ -46,14 +47,14 @@
 
 /*----------------------------------------------------------------------*/
 		/*Images*/
-		.pictureHome{
+		/* .pictureHome{
 			text-align: 
-		}
+		} */
 		#pictureHome>figure>img{
-				width: 100%;
-				transform: scale(1, 1);
-				-ms-transform: scale(1, 1);
-				-webkit-transform: scale(1, 1);	
+			width: 100%;
+			transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);	
 		}
 
 /*----------------------------------------------------------------------*/
@@ -68,34 +69,33 @@
 /*----------------------------------------------------------------------*/
 		/*Home*/
 		#spanTitulo{
-			font-size: 10vw;
+			font-size: 9vw;
 			font-family: Elsie Swash Caps, cursive;
-			padding-right:  10vw;	
+			padding-right:  18vw;	
 		}
 		#spanShort{
 			font-size: 3vw;
 			font-family: 'AdobeNaskh';
-			padding-left: 15%;
-			padding-right: 15%;
-			padding-top: 2%;
-			padding-bottom: 2%;
-		}
-		.conteinerLeft>div{
 			background-color: #98BE97;
-			width: 80%;
 			text-align: center;
 		}
 		nav{
 			float: right;
-			padding-right: 5vw;
+			padding-right: 8vw;
 		}
 		nav#horizontalNavigation > ul > li {
 		   display: block;
 		   float: left;
-		   font-size: 1.4em;
+		   font-size: 2vw;
 		   line-height: 1.8em;
 		   text-align: center;
-		   padding: 1vw;
+		   padding-left: 5vw;
+		   padding-top: 1vw;
+		   font-family: 'AdobeNaskh';
+		}
+		.dot{
+			color : black;
+			font-size: 6vw;
 		}
 		nav#horizontalNavigation a:link, 
 		nav#horizontalNavigation a:visited {
@@ -171,23 +171,26 @@
     		left: 150%;
 		}
 		#titleAboutUs{
-			font-size: 5vw;
+			font-size: 4vw;
 			font-family: 'AdobeNaskh';
 			padding-left: 10%;
+			padding-top: 10%;
 		}
 		#textAboutUs{
-			font-size: 1.3vw;
+			font-size: 1.2vw;
 			font-family: 'Avenir';
 			padding-left: 10%;
 			color: #FFFFFF;
 			white-space: normal;
-			width: 65%
+			width: 80%;
+			line-height: 1.5;
 		}
 		#reviews{
 			width: 95%;
 			color: #FFFFFF;
-			font-size: 1.5vw;
-			font-family: 'Avenir';
+			font-size: 2vw;
+			font-family: 'AdobeNaskh';
+			line-height: 1;
 		}
 		#reviewsDown{
 			position: absolute;
@@ -224,8 +227,10 @@
 #locations{
 	width: 38%;
 	margin: auto;
-	padding-top: 7%;
 	margin-bottom: 7%;
+}
+#tableLocations{
+	padding-top: 15%;
 }
 table#locations th{
 	background-color: #F2F2ED;
@@ -250,12 +255,14 @@ table#locations th{
 	  height: 3.5vw;
 	  width: 7vw;
 	  background-color: rgba(155, 72, 86, 1);
-	  position: absolute;		
-	  left: 65%;
+	  padding: 3%;
 	  font-family: 'Avenir';
 	  font-size: 1vw;
 	  color: rgba(255, 255, 255, 1);
 	  cursor: pointer;
+	  float: right;
+	  margin-bottom: 2%;
+	  margin-right: -5%;
 }
 /*----------------------------------------------------------------------*/
 /*maps*/

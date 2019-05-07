@@ -60,21 +60,21 @@ $(function() {
 		var x= 1-((scrollValue*.88)/1320);
 		if (scrollValue<1320) {
 			// 		
-			document.getElementById("logo").style="transform :translate(-"+(scrollValue*40)/1320+"%,-"+(scrollValue*21)/1320+"%) scale("+x+")";
+			document.getElementById("logo").style="transform :translate(-"+(scrollValue*41)/1320+"%,-"+(scrollValue*24)/1320+"%) scale("+x+")";
 			// $("#logo").css("transform", 'scale('+x+')');
 		}
 		else{
-			document.getElementById("logo").style="transform :translate(-40%,-21%) scale(0.12)";
+			document.getElementById("logo").style="transform :translate(-41%,-24%) scale(0.12)";
 		}
 		
 	}
 
 	function menuMove(scrollValue){
 		if (scrollValue < 1320) {
-			document.getElementById("horizontalNavigation").style="transform :translate(-"+((scrollValue-120)*185)/1200+"%";
+			document.getElementById("horizontalNavigation").style="transform :translate(-"+((scrollValue-120)*100)/1200+"%";
 		}
 		else{
-			document.getElementById("horizontalNavigation").style="transform :translate(-185%)";
+			document.getElementById("horizontalNavigation").style="transform :translate(-100%)";
 		}
 	}
 
